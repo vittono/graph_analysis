@@ -7,6 +7,9 @@ nx.draw(K, with_labels=True, node_color="lightblue", edge_color="gray")
 K.degree()[33]   # K.degree() treated as a dictionary
 K.degree(33)   # K.degree() treated as a method
 
+
+# random graph generation
+
 bernoulli.rvs(p=0.2)
 N = 20
 p = 0.2
