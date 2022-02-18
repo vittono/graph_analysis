@@ -1,9 +1,3 @@
-# graph is the abstract, mathematical representation of a network (such as a road network in real life)
-# graphs are collections of vertices (nodes) and edges (links)
-# a path is a sequence of unique vertices, such that any two vertices in the sequence are connected by an edge
-# length of a path is the number of edges in that path
-# a graph is said to be connected if every vertex is reachable from every other vertex
-
 import networkx as nx
 import matplotlib.pyplot as plt
 from scipy.stats import bernoulli
@@ -13,11 +7,6 @@ nx.draw(K, with_labels=True, node_color="lightblue", edge_color="gray")
 plt.savefig("karate_graph.pdf")
 K.degree()[33]   # K.degree() treated as a dictionary
 K.degree(33)   # K.degree() treated as a method
-
-# we can sample random graphs from a collection of random graphs
-# simplest possible random graph model is the Erdos-Renyi model (ER graph model)
-# it has 2 parameters, N = number of nodes, p = probability of a pair of nodes to be connected
-# if p is large, graphs tend to be densely connected
 
 bernoulli.rvs(p=0.2)
 N = 20
