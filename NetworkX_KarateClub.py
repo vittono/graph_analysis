@@ -4,7 +4,6 @@ from scipy.stats import bernoulli
 
 K = nx.karate_club_graph()
 nx.draw(K, with_labels=True, node_color="lightblue", edge_color="gray")
-plt.savefig("karate_graph.pdf")
 K.degree()[33]   # K.degree() treated as a dictionary
 K.degree(33)   # K.degree() treated as a method
 
@@ -31,7 +30,6 @@ def er_graph(N, p):
 
 
 nx.draw(er_graph(50, 0.08), node_size=40, node_color="gray")
-plt.savefig("er1.pdf")
 
 
 def plot_degree_distribution(g):
@@ -44,7 +42,6 @@ def plot_degree_distribution(g):
 
 G = er_graph(500, 0.08)
 plot_degree_distribution(G)
-plt.savefig("hist1.pdf")
 
 G1 = er_graph(500, 0.08)
 plot_degree_distribution(G1)
@@ -52,7 +49,6 @@ G2 = er_graph(500, 0.08)
 plot_degree_distribution(G2)
 G3 = er_graph(500, 0.08)
 plot_degree_distribution(G3)
-plt.savefig("hist3.pdf")
 
 E1 = nx.erdos_renyi_graph(100, 0.03)
 plot_degree_distribution(E1)
